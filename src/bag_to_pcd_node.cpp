@@ -12,7 +12,7 @@ Cloud Data) format.
 #include <boost/filesystem.hpp>
 #include <rosbag/bag.h>
 #include <rosbag/view.h>
-#include "pcl/io/io.h"
+#include <pcl/common/io.h>
 #include "pcl/io/pcd_io.h"
 #include "pcl/io/ply_io.h"
 #include "pcl_ros/transforms.h"
@@ -25,6 +25,7 @@ Cloud Data) format.
 #include <pcl_conversions/pcl_conversions.h>
 #include <pcl/filters/voxel_grid.h>
 #include "geometry_msgs/Vector3.h"
+
 typedef sensor_msgs::PointCloud2 PointCloud;
 typedef PointCloud::Ptr PointCloudPtr;
 typedef PointCloud::ConstPtr PointCloudConstPtr;
